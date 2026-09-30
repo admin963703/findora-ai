@@ -1,132 +1,70 @@
-# 🛡️ FINDORA AI
-### Autonomous Campus Lost & Found Intelligence Network
+# Findora AI — Campus Lost & Found Platform
 
-<div align="center">
-
-[![Team Number](https://img.shields.io/badge/Team%20Number-22-F59E0B?style=for-the-badge&logo=target&logoColor=white)](#)
-[![Problem Statement](https://img.shields.io/badge/Problem%20Statement-Smart%20Lost%20%26%20Found%20Management%20System-8B5CF6?style=for-the-badge)](#)
-[![Live Portal](https://img.shields.io/badge/Production%20Portal-ONLINE-10B981?style=for-the-badge&logo=vercel&logoColor=white)](https://findoravsbec.vercel.app)
-[![Cloud Database](https://img.shields.io/badge/Supabase-PostgreSQL%20Live-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
-[![Media Storage](https://img.shields.io/badge/Cloudinary-Verified%20CDN-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)](https://cloudinary.com)
-[![AI Engine](https://img.shields.io/badge/Google%20Gemini-2.5%20Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://deepmind.google/technologies/gemini/)
-[![Telegram Bot](https://img.shields.io/badge/Telegram%20Bot-@findoravsb__bot-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/findoravsb_bot)
-
-<p align="center">
-  <b>Find the connection. Verify the owner. Recover it safely.</b><br/>
-  An institutional-grade, privacy-first Lost & Found ecosystem built for smart campuses.
-</p>
-
-</div>
+Findora AI is a full-stack web application designed to automate lost-and-found operations across college campuses. It combines user verification, item registration, media storage, and automated notification workflows.
 
 ---
 
-## 🎯 Challenge Information
+## 🌟 Key Features
 
-- **Problem Statement**: **Smart Lost and Found Management System**
-- **Team Number**: **Team 22**
-- **Institution / Hackathon**: VSBEC Smart Campus Hackathon
-
----
-
-## 🌟 Visual Showcase
-
-<div align="center">
-
-### 📊 Real-Time Incident & Match Analyzer
-![Findora Dashboard](docs/assets/dashboard_incident_analyzer.png)
-*Live campus spatial telemetry, AI candidate matches, zone heatmaps, and zero-knowledge verification protocols.*
-
-<br/>
-
-### ☁️ Cloudinary Verified CDN Media Storage
-![Cloudinary Media Library](docs/assets/cloudinary_media_library.png)
-*Authentic live camera captures automatically tagged with GPS coordinates, campus location stamps, and tamper-proof evidence watermarks in Cloudinary `findora_items`.*
-
-<br/>
-
-### 🗄️ Supabase PostgreSQL Live Cloud Ledger
-![Supabase SQL Ledger](docs/assets/supabase_sql_ledger.png)
-*Real-time relational ledger tracking reported items, student/officer roles, Cloudinary CDN references, and secure custody lifecycles across all campus devices.*
-
-</div>
-
----
-
-## ⚡ Why FINDORA AI?
-
-Traditional lost-and-found operations fail due to low recovery rates (< 18%), rampant identity fraud, and privacy leaks. FINDORA AI solves this with four core innovations:
-
-| Innovation | How It Works | Campus Impact |
-| :--- | :--- | :--- |
-| **📸 Live Optical Evidence** | Browser camera captures with immutable GPS & timestamp watermarks saved directly to Cloudinary CDN. | Prevents fake/re-uploaded web images. |
-| **🧠 Multimodal AI Matching** | Combines Google Gemini 2.5 Flash, semantic embeddings, visual feature matching, and spatio-temporal decay. | Instant matching with mathematical precision score. |
-| **🛡️ Blind Verification Shield** | Generates dynamic challenge questions from private item attributes never shown to the public. | Eliminates fraudulent claimant impersonation. |
-| **🤖 Telegram Instant Broadcast** | Real-time notifications and campus group broadcasts via `@findoravsb_bot`. | Sub-second campus-wide reach to students and staff. |
-
----
-
-## 🏗️ System Workflow
-
-```mermaid
-flowchart LR
-    A["📸 Student / Officer<br/>Reports Item"] --> B["☁️ Cloudinary CDN<br/>GPS Watermarked Asset"]
-    B --> C["🧠 Gemini & Vector Match<br/>Visual + Spatial Score"]
-    C --> D["🛡️ Blind Verification<br/>Zero-Knowledge Questions"]
-    D --> E["🔐 1-Time Handover Code<br/>Verified by Officer"]
-    E --> F["✅ Secure Custody Return<br/>Real-Time Supabase Ledger"]
-```
-
----
-
-## 🚀 Key Features
-
-- **🎯 Precision Scoring Formula**:
-  $$\text{Score} = 0.35 \cdot S_{\text{visual}} + 0.30 \cdot S_{\text{semantic}} + 0.15 \cdot S_{\text{category}} + 0.10 \cdot S_{\text{spatial}} + 0.10 \cdot S_{\text{temporal}}$$
-- **🗺️ Campus Spatial Heatmap**: Live loss hot-spots across Library, Academic Blocks, Tech Labs, and Cafeteria.
-- **👮 Three-Tier Role Access Control**:
-  - **Student / User**: Report loss/found, answer blind questions, track claims.
-  - **Verification Officer**: Audit custody handovers, evaluate anomalies, execute code verification.
-  - **Administrator**: Institutional analytics, fraud risk mitigation, full audit telemetry.
-- **🔄 Universal Real-Time Database**: Native PostgreSQL connection pooling on Supabase with zero-latency synchronization across all devices.
+* 🔐 **Secure Authentication:** User signup & login using JWT tokens and Bcrypt password hashing.
+* 📸 **Image Upload Handling:** Seamless file upload integration backed by Cloudinary and Multer.
+* 📧 **Automated Notifications:** Email alerts dispatched via Nodemailer when matches are identified.
+* 📊 **Dashboard & Metrics:** Interactive statistics powered by Recharts.
+* 🎨 **Responsive Interface:** Modern, clean UI built with React 19, Vite, and Tailwind CSS v4.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React 19, Vite, Tailwind CSS, Lucide Icons, Recharts
-- **Backend**: Node.js, Express.js, JWT, Multer
-- **Database**: Supabase PostgreSQL (`pg` connection pool with SSL)
-- **Cloud Media**: Cloudinary SDK (v2)
-- **AI / Multimodal**: Google Gemini 2.5 Flash API
-- **Alerts & Bot**: Telegram Bot API (`node-telegram-bot-api`), Brevo SMTP Email
+* **Frontend:** React 19, Vite, Tailwind CSS v4, Lucide React, Recharts
+* **Backend:** Node.js, Express.js (v5)
+* **Database:** SQLite / PostgreSQL
+* **Cloud Services:** Cloudinary, Nodemailer, BcryptJS, JWT
 
 ---
 
-## ⚡ Quick Start
+## 🚀 Getting Started
 
-### 1. Clone & Install
-```bash
-git clone https://github.com/VSBECIT/findora-ai.git
-cd findora-ai
-npm run install:all
+### Prerequisites
+* Node.js (v18 or higher)
+* npm (v9 or higher)
+
+### Environment Setup
+Create a `.env` file in the `backend/` directory based on `.env.example`:
+
+```env
+PORT=5000
+JWT_SECRET=your_jwt_secret
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
 ```
 
-### 2. Run Locally
-```bash
-npm run dev
-```
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+### Installation & Running
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Tamilselvan3660/findora-ai.git
+   cd findora-ai
+   ```
+
+2. **Install & Run Backend:**
+   ```bash
+   cd backend
+   npm install
+   npm start
+   ```
+
+3. **Install & Run Frontend:**
+   ```bash
+   cd ../frontend
+   npm install
+   npm run dev
+   ```
 
 ---
 
-## 🌐 Live Deployments & Demos
+## 👤 Author
 
-- **Production Portal**: [https://findoravsbec.vercel.app](https://findoravsbec.vercel.app)
-- **Telegram Bot**: [@findoravsb_bot](https://t.me/findoravsb_bot)
-- **Default Officer Passcode**: `FindoraAdmin2026!`
-
----
-
-<div align="center">
-  <sub>Developed for Smart Campus Hackathon • VSBEC • Team 22 • FINDORA AI</sub>
-</div>
+* **Tamilselvan** — [@Tamilselvan3660](https://github.com/Tamilselvan3660)
+* Email: [selvantamil84786@gmail.com](mailto:selvantamil84786@gmail.com)
